@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+
+
+
+
+<table class="table table-striped table-responsive mt-5" id="myTable">
+    <thead>
+        <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">User Name</th>
+            
+
+
+
+
+
+
+        </tr>
+    </thead>
+    <tbody id="tb">
+
+        {% for post in likedusers %}
+
+
+
+        <tr>
+            <td>{{post.id}}</td>
+            <td>{{post.user.username}}</td>
+            
+            
+            
+
+
+
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+
+
+
+
+  
+
+
+{% endblock content %}
